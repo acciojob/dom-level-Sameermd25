@@ -5,7 +5,8 @@ let count = 0;
 let current = target;
 
 // Traverse up the DOM until there are no more parents
-while (current) {
+
+while (target !== null) {
     count++;
     current = current.parentElement;
 }
